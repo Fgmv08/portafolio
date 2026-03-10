@@ -59,11 +59,26 @@
 .text-title {
     font-size: clamp(2.1rem, 4vw, 3rem);
     line-height: 1.1;
+    margin-bottom: 0.5rem;
+    
+    /* Fallback para navegadores que no soportan gradientes en texto */
+    color: var(--accent-primary); 
+    
+    /* Gradiente con mayor compatibilidad */
     background: var(--accent-gradient);
+    background-size: 100%;
+    background-repeat: repeat;
+    
+    /* Propiedades de recorte */
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 0.5rem;
+    
+    /* Relleno transparente para mostrar el fondo */
+    -webkit-text-fill-color: transparent; 
+    
+    /* Mejora de renderizado en algunos motores */
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
 }
 
 .text-description {
