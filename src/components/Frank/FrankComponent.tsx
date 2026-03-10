@@ -57,7 +57,7 @@ const FrankComponent: React.FC = () => {
             />
 
             <ContentComponent
-                path='gitfrank2.png'
+                path='gitfrank.png'
                 titulo='Experiencia en Proyectos Reales'
                 contenido={'Desde el desarrollo de software administrativo para la gestión de proveedores en Ponto Hair Club, hasta la implementación de plataformas de análisis inmobiliario con IA en Arkia (España). Mi enfoque siempre ha sido transformar requerimientos complejos en módulos funcionales y escalables.'}
                 cabezera='Proyectos Destacados'
