@@ -141,7 +141,9 @@ const FrankComponent: React.FC = () => {
                 />
             </div>
 
-            <Footer />
+            <div id='contact'>
+                <Footer />
+            </div>
         </div>
     );
 };
