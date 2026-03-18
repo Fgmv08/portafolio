@@ -35,7 +35,7 @@ const Header: React.FC = () => {
                 <div className="header-right">
                     <div className="language-selector">
                         <button 
-                            className={`lang-btn ${i18n.language === 'es' ? 'active' : ''}`} 
+                            className={`lang-btn ${i18n.language.startsWith('es') ? 'active' : ''}`} 
                             onClick={() => changeLanguage('es')}
                         >
                             ES
