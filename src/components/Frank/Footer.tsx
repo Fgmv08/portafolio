@@ -1,16 +1,19 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Footer: React.FC = () => {
+    const { t } = useTranslation();
+
     return (
         <footer className="main-footer" id="contacto">
             <div className="footer-content">
                 <div className="footer-info">
                     <div className="logo-text">FM<span>.</span></div>
-                    <p className="footer-tagline">Construyendo soluciones escalables con pasión y precisión.</p>
+                    <p className="footer-tagline">{t('footer.tagline')}</p>
                 </div>
 
                 <div className="footer-contact">
-                    <h4 className="footer-title">Contacto</h4>
+                    <h4 className="footer-title">{t('footer.contacto')}</h4>
                     <a href="mailto:fgmv08@gmail.com" className="contact-link">
                         <span className="icon">✉</span> fgmv08@gmail.com
                     </a>
@@ -23,7 +26,7 @@ const Footer: React.FC = () => {
             </div>
 
             <div className="footer-bottom">
-                <p>&copy; {new Date().getFullYear()} Frank Muriel. Todos los derechos reservados.</p>
+                <p>&copy; {new Date().getFullYear()} Frank Muriel. {t('footer.copyright')}</p>
             </div>
         </footer>
     );

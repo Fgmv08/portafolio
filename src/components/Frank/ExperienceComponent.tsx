@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface ExperienceItem {
     role: string;
@@ -12,11 +13,13 @@ interface ExperienceComponentProps {
 }
 
 const ExperienceComponent: React.FC<ExperienceComponentProps> = ({ experiences }) => {
+    const { t } = useTranslation();
+
     return (
         <section className="experience-section">
             <div className="experience-header">
-                <p className="text-bridge"><b>------</b> Trayectoria Profesional</p>
-                <h2 className="text-title">Experiencia Laboral</h2>
+                <p className="text-bridge"><b>------</b> {t('experiencia.trayectoria')}</p>
+                <h2 className="text-title">{t('experiencia.titulo_seccion')}</h2>
             </div>
 
             <div className="experience-timeline">
